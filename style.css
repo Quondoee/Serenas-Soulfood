@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Black background for the body */
+    color: #fff;
+    line-height: 1.6;
+    background-image: url('images/background\ logo.JPEG');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* Header Section */
+header {
+    background-color: #000;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    color: #9b59b6;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    max-width: 300px;  /* Increased the image size */
+    margin-top: 20px;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px;
+    background-color: #222; /* Dark background for the nav */
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px; /* Space between header and content */
+}
+
+nav ul li a {
+    color: #9b59b6;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* About Section */
+.about {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #444; /* Added gray border */
+}
+
+.about h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    color: #9b59b6;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.about p {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Style for the image in the About section */
+.about-image {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 80%;  /* Ensures image is responsive */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Menu Section */
+.menu {
+    padding: 60px;
+    text-align: center;
+    margin-top: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Changed back to transparent dark background */
+    border: 2px solid #444; /* Added gray border */
+}
+
+.menu h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    color: #9b59b6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 40px;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding-top: 30px;
+}
+
+.menu-item {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.menu-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.menu-item p {
+    font-size: 18px;
+    color: #9b59b6;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    margin-top: 60px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    border: 2px solid #444; /* Added gray border */
+}
+
+.gallery h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    color: #9b59b6;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery-images img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin-top: 70px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #444; /* Added gray border */
+}
+
+.contact h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    color: #9b59b6;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.contact p {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer Section */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.7);
+    margin-top: 50px;
+}
+
+footer a {
+    color: #9b59b6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Place Order Section */
+.place-order {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    margin-top: 80px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #444; /* Added gray border */
+}
+
+.place-order h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    color: #9b59b6;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.place-order form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    border: 2px solid #444; /* Added gray border */
+}
+
+.place-order input,
+.place-order select,
+.place-order textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #9b59b6;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.place-order input:focus,
+.place-order select:focus,
+.place-order textarea:focus {
+    border-color: #8e44ad;
+    outline: none;
+}
+
+.place-order input[type="submit"] {
+    background-color: #9b59b6;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.place-order input[type="submit"]:hover {
+    background-color: #8e44ad;
+}
+
+/* Food Options */
+.place-order .food-options div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+    justify-content: center;
+}
+
+.place-order .food-options input[type="checkbox"] {
+    accent-color: #9b59b6;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.place-order .food-options label {
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 48px; /* Reduced font size for smaller screens */
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    nav ul li a {
+        font-size: 18px; /* Smaller font size for mobile navigation */
+    }
+
+    .menu h2,
+    .about h2,
+    .gallery h2,
+    .contact h2,
+    .place-order h2 {
+        font-size: 36px; /* Adjusted heading size */
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr; /* Stack items vertically */
+    }
+
+    .place-order form {
+        padding: 20px;
+    }
+
+    .place-order h2 {
+        font-size: 30px;
+    }
+
+    .place-order input,
+    .place-order select,
+    .place-order textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .place-order input[type="submit"] {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 36px; /* Further reduce font size for very small screens */
+    }
+
+    .logo-container img {
+        max-width: 200px; /* Scale logo image for small devices */
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+
+    .place-order input,
+    .place-order select,
+    .place-order textarea {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .place-order input[type="submit"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

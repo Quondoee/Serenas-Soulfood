@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soul Food Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Replaced the text with an image -->
+        <div class="logo-container">
+            <img src="images/soulfood word.JPEG" alt="Restaurant Logo" class="restaurant-name">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#place-order">Place Order</a></li> <!-- Link to the new Place Order section -->
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="about">
+        <h1>Welcome to Serena's Soulfood!</h1>
+        <p>We serve the BEST Soul Food in Wilmington. Come and experience these authentic flavors!</p>
+        <div class="about-image">
+            <img src="images/plate 2.jpg" alt="Soul Food Dish">
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Our Soul Food Menu</h2>
+        <div class="menu-image">
+            <img src="images/layout.avif" alt="Soul Food Menu" class="menu-image">
+        </div>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>Mac and Cheese</h3>
+                <p>Comfort food at its finest. Creamy, cheesy, and delicious!</p>
+            </div>
+            <div class="menu-item">
+                <h3>Collard Greens</h3>
+                <p>Seasoned and slow-cooked to perfection. A perfect side dish for your meal.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Whiting Fried Fish</h3>
+                <p>Fresh whiting fried to crispy perfection. A true soul food classic!</p>
+            </div>
+            <div class="menu-item">
+                <h3>Crab Balls</h3>
+                <p>Flavorful crab balls packed with Southern spices, deep-fried until golden brown.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Sweet Potatoes</h3>
+                <p>Sweet, savory, and perfectly baked with a touch of brown sugar and cinnamon.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Creamy Crab Bowl</h3>
+                <p>Rich and creamy crab dish that will light up your tastebuds.</p>
+            </div>
+            <div class="menu-item">
+                <h3>Fried Chicken</h3>
+                <p>Crispy on the outside, juicy on the inside. DELAWARE STYLE!</p>
+            </div>
+            <div class="menu-item">
+                <h3>Crab Fries</h3>
+                <p>Crispy fries topped with tender crab meat and a spicy sauce.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <img src="images/plate 1.jpg" alt="Soul Food 1">
+            <img src="images/plate 22.jpg" alt="Soul Food 2">
+            <img src="images/plate 3.jpg" alt="Soul Food 3">
+        </div>
+    </section>
+
+    <section id="place-order" class="place-order">
+        <h2>Place Your Order</h2>
+        <form id="order-form">
+            <!-- Customer Information -->
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+            <div>
+                <label for="order-specifications">Order Specifications (Optional):</label>
+                <textarea id="order-specifications" name="order-specifications" placeholder="Enter any special requests (e.g., no salt, extra spicy)"></textarea>
+            </div>
+
+            <!-- Food Items to be Ordered (with checkboxes) -->
+            <h3>Select your food items:</h3>
+            <div class="food-options">
+                <div>
+                    <input type="checkbox" id="fried-chicken" name="food-item" value="Fried Chicken">
+                    <label for="fried-chicken">Fried Chicken</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="collard-greens" name="food-item" value="Collard Greens">
+                    <label for="collard-greens">Collard Greens</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="mac-and-cheese" name="food-item" value="Mac and Cheese">
+                    <label for="mac-and-cheese">Mac and Cheese</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="whiting-fried-fish" name="food-item" value="Whiting Fried Fish">
+                    <label for="whiting-fried-fish">Whiting Fried Fish</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="crab-balls" name="food-item" value="Crab Balls">
+                    <label for="crab-balls">Crab Balls</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="sweet-potatoes" name="food-item" value="Sweet Potatoes">
+                    <label for="sweet-potatoes">Sweet Potatoes</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="creamy-crab-bowl" name="food-item" value="Creamy Crab Bowl">
+                    <label for="creamy-crab-bowl">Creamy Crab Bowl</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="crab-fries" name="food-item" value="Crab Fries">
+                    <label for="crab-fries">Crab Fries</label>
+                </div>
+            </div>
+
+            <!-- Payment Information -->
+            <h3>Payment Information</h3>
+            <div id="card-element">
+                <!-- Stripe Card Element will be inserted here -->
+            </div>
+
+            <button type="submit" id="submit">
+                <span id="button-text">Place Order and Pay</span>
+            </button>
+            <div id="payment-error" role="alert"></div>
+        </form>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>For reservations or inquiries, reach us at:</p>
+        <p>Email: contact@soulfoodrestaurant.com</p>
+        <p>Phone: +123 456 789</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Serena's Soulfood. All rights reserved.</p>
+    </footer>
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+        // Set up Stripe
+        const stripe = Stripe('your-publishable-key'); // Replace with your Stripe publishable key
+        const elements = stripe.elements();
+        const card = elements.create('card');
+        card.mount('#card-element');
+
+        const form = document.getElementById('order-form');
+        const errorElement = document.getElementById('payment-error');
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            document.getElementById('submit').disabled = true;
+
+            const name = document.getElementById('name').value;
+            const orderSpecifications = document.getElementById('order-specifications').value;
+            const selectedItems = Array.from(document.querySelectorAll('input[name="food-item"]:checked')).map(input => input.value);
+
+            if (selectedItems.length === 0) {
+                alert('Please select at least one food item.');
+                document.getElementById('submit').disabled = false;
+                return;
+            }
+
+            const { token, error } = await stripe.createToken(card);
+
+            if (error) {
+                errorElement.textContent = error.message;
+                document.getElementById('submit').disabled = false;
+            } else {
+                // Send token, customer details, and selected items to your server
+                const response = await fetch('/charge', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        token: token.id,
+                        name: name,
+                        orderSpecifications: orderSpecifications,
+                        items: selectedItems
+                    }),
+                });
+
+                const paymentData = await response.json();
+
+                if (paymentData.success) {
+                    alert('Order placed and payment successful!');
+                } else {
+                    alert('Payment failed!');
+                }
+                document.getElementById('submit').disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>
